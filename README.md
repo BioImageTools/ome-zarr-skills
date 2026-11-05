@@ -8,6 +8,7 @@ Agentic Skills for [OME-Zarr](https://ngff.openmicroscopy.org/).
 |-------|--------|--------------|
 | `setup-ome-zarr-skills` | `/setup-ome-zarr-skills`, by you only | Run once per repo. Records the spec version, RFCs in use, and imaging domain in `docs/agents/ome-zarr.md`. |
 | `reading-ome-zarr-spec` | automatic | Infers the OME-Zarr version in play and fetches that version's spec from the official site. |
+| `planning-ome-zarr-layout` | automatic | Chooses chunk, shard and tile shapes from how downstream tools read and write the data (tiled segmentation, pixel classification, tracking, viewers, cluster jobs); spec rules such as DCA are applied afterwards. |
 
 ## How the skills compose
 
