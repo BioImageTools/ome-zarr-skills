@@ -14,9 +14,10 @@ Versions differ in important ways (e.g. 0.4 is Zarr v2 with `.zattrs`;
 Look, in order, until one hits:
 
 1. Explicit mention in the conversation or task ("0.4 dataset", "v0.5 writer").
-2. Data on disk: `zarr.json` → `attributes.ome.version`; `.zattrs` → `multiscales[0].version` (or `plate.version`, `image-label.version`).
-3. Code/config: version strings in writers, tests, fixtures, or pinned libraries (`ome-zarr-py`, `ngff-zarr`, `iohub`, `bioformats2raw`).
-4. Nothing found → read the index page (step 2) for the current released version, use it, and say so.
+2. `docs/agents/ome-zarr.md` in the repo (written by `/setup-ome-zarr-skills`): its `target` version, plus any RFCs it lists.
+3. Data on disk: `zarr.json` → `attributes.ome.version`; `.zattrs` → `multiscales[0].version` (or `plate.version`, `image-label.version`).
+4. Code/config: version strings in writers, tests, fixtures, or pinned libraries (`ome-zarr-py`, `ngff-zarr`, `iohub`, `bioformats2raw`).
+5. Nothing found → read the index page (section 2) for the current released version, use it, and say so.
 
 ## 2. Fetch the spec
 
