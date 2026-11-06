@@ -14,6 +14,7 @@ DISABLE_TELEMETRY=1 npx skills add BioImageTools/ome-zarr-skills -g
 
 | Skill | Invoke | What it does |
 |-------|--------|--------------|
+| `ome-zarr-primer` | automatic, loaded first | Background on bioimage analysis and OME-Zarr: image concepts, formats, Zarr chunks/shards, OME-Zarr layout and versions, tooling, pipelines, large-image patterns. The other skills build on it. |
 | `setup-ome-zarr-skills` | `/setup-ome-zarr-skills`, by you only | Run once per repo. Records the spec version, RFCs in use, and imaging domain in `docs/agents/ome-zarr.md`. |
 | `reading-ome-zarr-spec` | automatic | Infers the OME-Zarr version in play and fetches that version's spec from the official site. |
 | `inspect-ome-zarr` | automatic | Read-only summary of an OME-Zarr store (local, zip, http, s3, gs): structure, axes, pixel size, pyramid, channels, storage, labels, plus anomalies with fixes. Optional JSON for other skills. |

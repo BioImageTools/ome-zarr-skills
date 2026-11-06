@@ -1,8 +1,20 @@
-# Knowledgebase: OME-Zarr & Bioimage Analysis
+---
+name: ome-zarr-primer
+description: Background primer on bioimage analysis and OME-Zarr (OME-NGFF) - image dimensions and metadata, file formats, Zarr chunks/shards, OME-Zarr layout and versions, tooling, typical pipelines, and large-image processing patterns. Load first, before the other OME-Zarr skills, whenever a task involves microscopy images, OME-Zarr/OME-TIFF/Zarr data, or bioimage analysis code and workflows.
+---
+
+# OME-Zarr & Bioimage Analysis Primer
 
 A high-level primer to give an agent working context. It is not a spec — when exact
 field names or constraints matter, check the official OME-NGFF specification at
 https://ngff.openmicroscopy.org and the source code of the tool in question.
+
+Other skills in this set build on it:
+
+- `reading-ome-zarr-spec`: fetch the spec for the version in use.
+- `inspect-ome-zarr`: summarise an existing store.
+- `planning-ome-zarr-layout`: choose chunk, shard and tile shapes.
+- `setup-ome-zarr-skills`: record per-repo preferences in `docs/agents/ome-zarr.md`.
 
 ---
 
