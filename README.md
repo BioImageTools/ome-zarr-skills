@@ -2,6 +2,14 @@
 
 Agentic Skills for [OME-Zarr](https://ngff.openmicroscopy.org/).
 
+## Install
+
+Requires [Node.js](https://nodejs.org/en/download) (for `npx`). Then:
+
+```bash
+DISABLE_TELEMETRY=1 npx skills add BioImageTools/ome-zarr-skills -g
+```
+
 ## Skills
 
 | Skill | Invoke | What it does |
@@ -17,11 +25,11 @@ Per-repo preferences live in `docs/agents/ome-zarr.md`, written by `setup-ome-za
 
 ## Dev install
 
-Symlink the skills into Claude Code so edits in this repo are picked up on the next session:
+Symlink the skills into Claude Code (`.claude/skills`) and the cross-agent `.agents/skills` dir so edits in this repo are picked up on the next session:
 
 ```bash
-scripts/link-skills.sh              # all projects (~/.claude/skills)
-scripts/link-skills.sh <project>    # one project (<project>/.claude/skills)
+scripts/link-skills.sh              # all projects (~/.claude/skills, ~/.agents/skills)
+scripts/link-skills.sh <project>    # one project (<project>/.claude/skills, <project>/.agents/skills)
 scripts/link-skills.sh --unlink     # remove
 ```
 
